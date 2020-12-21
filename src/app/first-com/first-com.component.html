@@ -9,7 +9,10 @@
 <div [class]="{'className': show}">
     {{show ? '显示' : '隐藏'}}
 </div>
-<btton (click)='checkedCallback()'>调用父级组件</btton>
+<input [(ngModel)]="changeText" />
+<button (click)='inputClick()'>变回去</button>
+<div>{{changeText}}</div>
+<button (click)='checkedCallback()'>调用父级组件</button>
 <style>
     .className{
         background: red;

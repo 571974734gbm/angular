@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { FirstComComponent } from './first-com/first-com.component';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { FirstComComponent } from './first-com/first-com.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

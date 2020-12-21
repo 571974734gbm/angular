@@ -12,6 +12,7 @@ export class FirstComComponent implements OnInit {
   @Output('checked') checkedBack = new EventEmitter<any>();
   public text: string = '111'
   public show: boolean = true
+  public changeText: string = "修改值"
   public testList: Array<object> = [
     {
       name: '1'
@@ -26,6 +27,10 @@ export class FirstComComponent implements OnInit {
       name: '4'
     }
   ]
+  public inputClick(){
+    this.changeText = '回去'
+    console.log(this.changeText)
+  }
   public clickFun() {
     console.log('ss')
     this.show = !this.show
