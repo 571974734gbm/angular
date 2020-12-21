@@ -1,0 +1,17 @@
+<div *ngFor="let item of testList" class="heroes">
+    {{item.name}}
+</div>
+<div *ngIf="show">显示出来呀</div>
+<button (click)="clickFun()">点我就{{show ? '显示' : '隐藏'}}了</button>
+<div [ngStyle]="{'background-color':'green'}">
+    绿色的
+</div>
+<div [class]="{'className': show}">
+    {{show ? '显示' : '隐藏'}}
+</div>
+<btton (click)='checkedCallback()'>调用父级组件</btton>
+<style>
+    .className{
+        background: red;
+    }
+</style>
